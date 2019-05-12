@@ -32,5 +32,10 @@ export default function getMenus(userId) {
         // {key: 'page404', local: 'page404', text: '404页面不存', icon: 'file-search', path: '/404', order: 700},
         // {key: 'user-center', local: 'user-center', text: '用户中心', icon: 'user', path: '/user-center', order: 600},
         // {key: 'component', local: 'component', text: '组件', icon: 'ant-design', order: 700},
+
+        {key: 'my-consulting-room', text: '我的诊室', icon: 'solution'},
+        {key: 'start-consulting', parentKey: 'my-consulting-room', text: '开始坐诊', icon: 'medicine-box', path: '/start-consulting'},
+        {key: 'report-list', parentKey: 'my-consulting-room', text: '报告列表', icon: 'file-done', path: '/report-list'},
+        {key: 'order-list', parentKey: 'my-consulting-room', text: '订单列表', icon: 'shopping', path: '/order-list'},
     ].concat(antdMenus));
 }

@@ -1,6 +1,6 @@
 export default {
     application: {
-        name: 'React Admin',
+        name: '远程医疗管理系统',
     },
     ajaxTip: {
         success: '成功',
